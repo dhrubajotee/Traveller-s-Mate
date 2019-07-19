@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>Drik Gallery</h1>
+ <p>
+ Drik Picture Library, Bangladesh is a distinctive multimedia organisation that was established in 1989. Its major areas of expertise are advocacy and awareness campaigns, production of communication material and training. On 4th September 1989, a small group of people set up a picture agency in Dhaka, the capital of Bangladesh. Named 'Drik', the Sanskrit word for 'vision', it was registered in 1994.
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.752069, lng: 90.369887 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

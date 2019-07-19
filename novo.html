@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>Novotheatre</h1>
+ <p>
+  Bangabandhu Sheikh Mujibur Rahman Novo Theatre is a planetarium on Bijoy Sharani Avenue of Tejgaon area in Dhaka, Bangladesh. The theater opened to public on 25 September 2004. It was previously named Bhashani Novo Theatre.
+Address: Bijoy Sarani, Dhaka 1215, Bangladesh. 
+Hours:10AM to 6:30PM
+Phone: +880 2-9138878
+Established: 5 September 2004
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.763637, lng: 90.387270 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

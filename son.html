@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+ <head>
+	<style>
+	    
+		#map{
+			height: 400px;
+			width: 1150px;
+			float: center;
+		}
+		body{
+			background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+			background-repeat: no-repeat;
+	background-size:1400px 1200px;
+		}
+		p{
+			font-size:20px; 
+		}
+	</style>
+ </head>
+ <body>
+ <h1>Sonargaon</h1>
+ <p>
+ 	Sonargaon was a historic administrative, commercial and maritime centre in Bengal. Situated in the centre of the Ganges delta, it was the seat of the medieval Muslim rulers and governors of eastern Bengal. 
+Area: 180 acres
+Did you know: Lok Shilpa Jadughar (Folk Art and Craft Museum) of Sonargaon was established by Bangladeshi painter Joynul Abedin on 12 March 1975.
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+ 	
+ </div>
+ <script>
+ 	function initMap(){
+ 		var location = {lat: 23.645973, lng: 90.599216 };
+ 		var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+ 		var marker = new google.maps.Marker({
+ 			position : location,
+ 			map : map
+ 		});
+ 	}
+ 	
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+ 	
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

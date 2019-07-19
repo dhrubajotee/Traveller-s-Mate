@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>Baitul Mukarram National Mosque</h1>
+ <p>
+  Baitul Mukarram, also spelled as Baytul Mukarrom is the national mosque of Bangladesh. Located at the center of Dhaka, capital of Bangladesh, the mosque was completed in 1968.
+Address: Topkhana Road, Dhaka 1000, Bangladesh
+Height: 99'
+Capacity: 40,000
+Architectural style: Islamic architecture
+Architect: Abdulhusein M. Thariani
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.729476, lng: 90.412243 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>The Curzon Hall</h1>
+ <p>
+ The Curzon Hall is a British Raj-era building and home of the Faculty of Science at the University of Dhaka. The building was originally intended to be a town hall and is named after Lord Curzon, the Viceroy of India who laid its foundation stone in 1904. Upon the establishment of Dacca University in 1921, it became the base of the university's science faculty.
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.727342, lng: 90.401843 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <script type="text/javascript">
+function validate_email(field,alerttxt)
+{
+with (field)
+  {
+  apos=value.indexOf("@");
+  dotpos=value.lastIndexOf(".");
+  if (apos<1||dotpos-apos<2)
+    {alert(alerttxt);return false;}
+  else {return true;}
+  }
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+  {
+  if (validate_email(email,"Not a valid e-mail address!")==false)
+    {email.focus();return false;}
+  }
+}
+</script>
+    <style>
+    	body{
+
+                background-repeat: no-repeat;
+                background-size: 1450px;
+
+            }
+            h1{
+            	color: black;
+            	font-size:45px;
+            	float: center;
+            }
+            p{
+            	font-size:30px;
+            	float: center;
+
+            }
+
+
+    </style>
+</head>
+<body background="images/Bangladesh-nature.jpg">
+    
+    <h1><b>Create User</b></h1><br>
+    <form action="signin.php" onSubmit="   return validate_form(this)" method="post">
+       <p> <b>Name: <input style="color: blue;font-size: 20px;" type="text" name="username" placeholder="Enter username"> <br><br>
+        Email: <input style="color: blue;font-size: 20px;" type="text" name="email" placeholder="Enter email-id"><br><br>
+        Password: <input style="color: blue;font-size: 20px;" type="password" name="password" placeholder="Enter password"><br>
+       <b> <input style="color: blue;font-size: 20px;" type="submit" value="Register"></b>
+        </b></p>
+    </form>
+    
+</body>
+</html>

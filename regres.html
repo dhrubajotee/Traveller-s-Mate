@@ -1,0 +1,167 @@
+<html>
+<head><title>Traveller's Mate</title>
+ <link rel="shortcut icon" type="image/png" href="images/406667.png">
+<style>
+body{
+    color: black;
+
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 17px;
+    background-image: url('images/Restaurant-Photos-HD.jpg');
+    background-repeat: no-repeat;
+    background-size:1500px 700px;  
+}
+
+.user {
+    background-color: #9999ff;
+    color: black;
+    font-style: bold;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.pass {
+    background-color: #9999ff;
+    color: white;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+img{
+    text-align: center;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 0px;
+}  
+.button {
+    width: 110px;
+  padding: 5px 5px;
+  font-size: 18px;
+  float: right;
+  margin-right: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ff1a1a;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #ff944d;
+}
+.button1 {
+    width: 150px;
+  padding: 5px 5px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  margin-left: 12px;
+  color: #fff;
+  background-color: #ff1a1a;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #ff944d;
+}
+.button1:hover {background-color: #cc0000}
+
+.button1:active {
+  background-color: #b30000;
+  box-shadow: 0 5px #ff944d;
+  transform: translateY(4px);
+}
+
+.button:hover {background-color: #cc0000}
+
+.button:active {
+  background-color: #b30000;
+  box-shadow: 0 5px #ff944d;
+  transform: translateY(4px);
+}
+
+.link {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.link:hover span {
+  padding-right: 10px;
+}
+
+.link:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div {
+    width: 320px;
+    height: 430px;
+    padding: 15px;
+    border: 1px red;
+    margin-left: auto;
+    margin-right: 300px;
+    margin-top: 100px; 
+    background-color: #3366ff;
+    border-radius:5px;
+    border:solid 5px black;
+}
+input{
+    margin-left: 10px;
+    padding: 7px;
+    }
+ .text{
+  font-size: 30px;
+  color: white;
+    margin-left: 700px;
+    margin-right: 200px;
+   margin-top: 30px;
+ }
+
+</style>
+
+</head>
+<body>
+     <p class="text"><b>Update New Restaurant</b></p>
+ <div>
+ <img align="middle" src="images/406667.png">
+<form action="thingstodo.php" onSubmit="   return validate_form(this)" method="post">
+       <p> <b>Name: <input class="user"  type="text" name="name" placeholder="   Enter restaurant name"> <br><br>
+        Cuisine: <input class="user" type="text" name="type" placeholder="Enter Cuisine"><br><br>
+        Address: <input class="user" type="text" name="address" placeholder="Enter Address"><br><br>
+       <input class="button" type="submit" name="res" value="Update"><b>
+       <input class="button1" type="submit" onclick="restaurants.php" name="res" value="Back to Restaurants">
+           
+        </b>
+        </b></p>
+    </form>
+ <br>
+ 
+ </div>
+
+</body>
+</html>

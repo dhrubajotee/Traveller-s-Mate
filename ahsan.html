@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>Ahsan Manzil</h1>
+ <p>
+  Ahsan Manzil was the official residential palace and seat of the Nawab of Dhaka. The building is situated at Kumartoli along the banks of the Buriganga River in Dhaka, Bangladesh. Construction was started in 1859 and was completed in 1872. 
+Address: 2/3 Islampur Rd, Dhaka, Bangladesh.
+Hours: 8.30 AM - 9.30 PM. 
+Phone: +880800-5854584
+Function: Palace.
+Architectural style: Indo-Saracenic Revival architecture.
+Built: 1859-1872.
+Visitors: More than 3 million (in 2003)
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.708596, lng: 90.406002 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

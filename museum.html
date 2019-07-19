@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+ <head>
+  <link rel="shortcut icon" type="image/png" href="images/406667.png">
+		<title>Traveller's Mate</title>
+	<style>
+	    
+		#map{
+			height: 400px;
+			width: 1150px;
+			float: center;
+		}
+		body{
+			background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+			background-repeat: no-repeat;
+	background-size:1400px 1200px;
+		}
+		p{
+			font-size:20px; 
+		}
+	</style>
+ </head>
+ <body>
+ <h1>National Museum</h1>
+ <p>
+ 	The Bangladesh National Museum, originally established on 20 March 1913, albeit under another name, and formally inaugurated on 7 August 1913, was accorded the status of the national museum of Bangladesh on 17 November 1983. Wikipedia
+Address: Shahbagh Rd, Dhaka, Bangladesh 
+Phone: +880 2-9667693
+Established: 20 March 1913; 104 years ago
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+ 	
+ </div>
+ <script>
+ 	function initMap(){
+ 		var location = {lat: 23.737512, lng: 90.394573 };
+ 		var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+ 		var marker = new google.maps.Marker({
+ 			position : location,
+ 			map : map
+ 		});
+ 	}
+ 	
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+ 	
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

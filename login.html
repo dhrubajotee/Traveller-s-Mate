@@ -1,0 +1,169 @@
+<html>
+<head><title>Traveller's Mate</title>
+<script type="text/javascript">
+function validate_required(field,alerttxt)
+{
+with (field)
+  {
+  if (value==null||value=="")
+    {
+    alert(alerttxt);return false;
+    }
+  else
+    {
+    return true;
+    }
+  }
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+  {
+  if (validate_required(username,"Userame must be filled out!")==false)
+  {  username.focus(); return false;}
+if (validate_required(password,"password must be given!")==false)
+  {  password.focus(); return false;}
+}
+}
+</script>
+<style>
+body{
+    color: white;
+
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 17px;
+    background-image: url('images/plane-background-750x500.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;  
+}
+
+.user {
+    background-color: #9999ff;
+    color: black;
+    font-style: bold;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+.pass {
+    background-color: #9999ff;
+    color: white;
+    width: 220px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+img{
+    text-align: center;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 0px;
+}  
+.button {
+    width: 100px;
+  padding: 5px 5px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #ff1a1a;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 9px #ff944d;
+}
+
+.button:hover {background-color: #cc0000}
+
+.button:active {
+  background-color: #b30000;
+  box-shadow: 0 5px #ff944d;
+  transform: translateY(4px);
+}
+
+.link {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  padding: 10px 10px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.link span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.link:hover span {
+  padding-right: 10px;
+}
+
+.link:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+div {
+    width: 300px;
+    height: 430px;
+    padding: 15px;
+    border: 1px red;
+    margin-left: 300px;
+    margin-right: auto;
+    margin-top: 100px; 
+    background-color: #3366ff;
+    border-radius:5px;
+    border:solid 5px black;
+}
+input{
+    margin-left: 10px;
+    padding: 7px;
+    }
+      
+</style>
+
+</head>
+<body>
+ <div>
+ <img align="middle" src="images/406667.png">
+
+<form action="login.php" onSubmit="return validate_form(this)" method="POST">
+<p>
+<input class="user" type="text" name="username" placeholder="Username" /><br />
+</p>
+<p>
+<input class="pass" type="password" name="password" placeholder="Password"/><br />
+</p>
+<form action="cookie.php" method="get">
+  <input type="checkbox" name="vehicle" value="">    Remember me
+  <br>
+  <br>
+<input class="button" type="submit" value="Login"/>
+
+</form>
+ <br>
+ <form action="signin.html">
+ <p>Don't have an account? <button onclick="signin.html" class="link"><span>Register</span></button>
+ </span>
+ </form>
+ </div>
+
+</body>
+</html>

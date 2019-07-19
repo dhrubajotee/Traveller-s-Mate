@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>Baldha Garden</h1>
+ <p>
+ Baldha Garden is a botanical garden which spans 3.15 acres of land located at Wari in the old part of the city of Dhaka, the capital of Bangladesh. It has a collection of 672 species of plants. 
+Address: Narinda Rd, Dhaka 1100, Bangladesh.
+Hours:10:15AM-12AM.
+Open: All year.
+Created: 1909.
+Area: 3.15 acres (12,700 m2)
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.716997, lng: 90.419313 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

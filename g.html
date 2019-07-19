@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>Gurdwara Nanak Shahi</h1>
+ <p>
+ Gurdwara Nanak Shahi  is the principal Sikh Gurdwara (prayer hall) in Dhaka, Bangladesh. It is located at the campus of the University of Dhaka and considered to be the biggest of the 9 to 10 Gurdwaras in the country. The Gurudwara commemorates the visit of Guru Nanak (1506-1507). It is said to have been built in 1830. The present building of the Gurdwara was renovated in 1988-1989. The parkarma verandah had been constructed on all four sides of the original building to provide protection.
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.733616, lng: 90.393609 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+

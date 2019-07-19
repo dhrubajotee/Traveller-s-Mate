@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+ <head>
+  <style>
+      
+    #map{
+      height: 400px;
+      width: 1150px;
+      float: center;
+    }
+    body{
+      background-image: url("images/crystal-water-wallpapers_22544_1280x800.jpg");
+      background-repeat: no-repeat;
+  background-size:1400px 1200px;
+    }
+    p{
+      font-size:20px; 
+    }
+  </style>
+ </head>
+ <body>
+ <h1>Shankhari Bazar</h1>
+ <p>
+ Shankhari Bazaar is one of the oldest areas in Old Dhaka. It stretches along a narrow lane, lined with richly decorated brick buildings, built during the late Mughal or Colonial period.Shankhari Bazar is located near the intersection of Islampur Road and Nawabpur Road, a block north of the Buriganga River.In the 17th century, the Shankhari people were brought by the Mughal emperor, who allotted this place to them for living which later known as Shankhar Bazaar.
+ </p>
+ <p>
+ View in Google Map :</p><br>
+ <div id="map">
+  
+ </div>
+ <script>
+  function initMap(){
+    var location = {lat: 23.709995, lng: 90.409683 };
+    var map = new google.maps.Map(document.getElementById("map"),{zoom: 10,center:location});
+    var marker = new google.maps.Marker({
+      position : location,
+      map : map
+    });
+  }
+  
+ </script>
+ <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYZ0FB-muv-N4VfaPc19w-o79DvWps0Cw&callback=initMap">
+  
+ </script>
+ </body>
+</html>
+
+
+
+
+
+
