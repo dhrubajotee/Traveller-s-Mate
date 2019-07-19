@@ -1,0 +1,5 @@
+1. Copy all the files and folders except Database
+2. Create a folder named Traveller's Mate and paste the copied files in this folder
+3. Copy Traveller's Mate and move it to xampp/htdocs flder
+4. Copy the contents of Database folder and paste them in xampp/mysql
+5. Run the project with localhost in the browser
